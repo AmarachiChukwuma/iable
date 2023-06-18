@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background:  rgba(0,0,0,.8);  */
+    display: flex;
+    background: linear-gradient(to top, rgb(0,0,0,0.9)50%, rgb(0,0,0,0.9)50%), url(/assets/image/gcgh.png);
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    column-gap: 30px;
+
+}
+.form-con{
+    /* color: #fff; */
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: #fff; */
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.form-con h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #fff;
+    position: relative;
+
+}
+.input-f{
+    /* background: #eaeaea; */
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    border: 5px solid #fff;
+    align-items: center;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    padding: 18px 15px;
+}
+/* .input-f i{
+    margin-left: 15px;
+    color: #999;
+} */
+form p{
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+}
+form a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: #963030;
+    font-size: 15px;
+    background: #fff;
+    border-radius: 3px;
+    margin-left: 5px;
+    text-align: center;
+    padding: 7px;
+}
+
+
+.btn-f{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+.btn-f button{
+    flex-basis: 48%;
+    background: #963030;
+    color: #fff;
+    height: 40px;
+    border-radius: 16px;
+    border: 0;
+    font-size: 20px;
+    outline: 0;
+    cursor: pointer;
+}
+.btn-f button:hover{
+    color: white;
+    transform: translateY(-.5rem);
+}
+.line{
+    position: relative;
+    background-color: #d4d4d4;
+    margin: 36px 0;
+    height: 1px;
+    width: 100%;
+}
+.line::before{
+    content: 'or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    color:#963030;
+    padding: 0px 15px;
+    transform: translate(-50%, -50%);
+}
+.form-con p{
+    color: #fff;
+    font-size: 20px;
+}
+@media only screen and (max-width: 896px)  {
+    .form-con p{
+        color: #fff;
+        font-size: 12px;
+    }
+    form a{
+        margin-top: 5px;
+        text-decoration: none;
+        color: #963030;
+        font-size: px;
+        background: #fff;
+        border-radius: 3px;
+        margin-left: 10px;
+        text-align: center;
+        padding: 7px;
+    }
+}
